@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="css/myStyle.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+
+<body>
+  	<header>
+		<h1>
+			<a href="Home.html">
+			<img src="images/one_vacPackage/baseline-flight_takeoff-24px.svg" alt="logo-company"> VACAPP
+                2.0
+			</a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="one_vacPackage.html">Reserve Package 1</a></li>
+				<li><a href="paquete-2.html">Reserve Package 2</a></li>
+			</ul>
+		</nav>
+	</header>
+    <div class="content">
+        <div class="container_12">
+            <div class="grid_4">
+                <div class="banner">
+                    <img src="images/ban_img1.jpg" alt="">
+                    <div class="label">
+                        <div class="title">Barcelona</div>
+                        <div class="price">DESDE <span>$ 1000</span></div>
+                        <a href="#">LEER MAS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="banner">
+                    <img src="images/ban_img2.jpg" alt="">
+                    <div class="label">
+                        <div class="title">GOA</div>
+                        <div class="price">DESDE <span>$ 1.500</span></div>
+                        <a href="#">LEER MAS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="banner">
+                    <img src="images/ban_img3.jpg" alt="">
+                    <div class="label">
+                        <div class="title">PARIS</div>
+                        <div class="price">DESDE <span>$ 1.600</span></div>
+                        <a href="#">LEER MAS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_6">
+                <h3>Reservacion</h3>
+                <form id="bookingForm">
+                    <div class="fl1">
+                        <div class="tmInput">
+                            <input name="Name" placeHolder="Nombre:" type="text">
+                        </div>
+                        <div class="tmInput">
+                            <input name="Country" placeHolder="Pais:" type="text">
+                        </div>
+                    </div>
+                    <div class="fl1">
+                        <div class="tmInput">
+                            <input name="Email" placeHolder="Email:" type="text">
+                        </div>
+                        <div class="tmInput mr0">
+                            <input name="Hotel" placeHolder="Hotel:" type="text">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <strong>Check-in</strong>
+                    <label class="tmDatepicker">
+                        <input type="text" name="Check-in" placeHolder='10/10/2018'>
+                    </label>
+                    <div class="clear"></div>
+                    <strong>Check-out</strong>
+                    <label class="tmDatepicker">
+                        <input type="text" name="Check-out" placeHolder='20/10/2018'>
+                    </label>
+                    <div class="clear"></div>
+                    <div class="tmRadio">
+                        <p>confort</p>
+                        <input name="confort" type="radio" id="tmRadio0" checked />
+                        <span>Bajo</span>
+                        <input name="confort" type="radio" id="tmRadio1" />
+                        <span>Standart</span>
+                        <input name="confort" type="radio" id="tmRadio2" />
+                        <span>Lujo</span>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="fl1 fl2">
+                        <em>Adultos</em>
+                        <select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+                            <option>1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <div class="clear"></div>
+                        <em>Cuartos</em>
+                        <select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+                            <option>1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="fl1 fl2">
+                        <em>Niños</em>
+                        <select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+                            <option>0</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="tmTextarea">
+                        <textarea name="Message" placeHolder="Message" @Length(min=20,max=999999)></textarea>
+                    </div>
+                    <a href="#" class="btn" data-type="submit">Submit</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<footer>
+		Team: Carlos Roberto Ponce de Leon Ruiz, Jaime Fernando Rivedra Saavedra, Jesus Valdemar Benitez Castañeda, Luis Rogelio Gallegos Rodriguez <a rel="author" href="Team_Info.txt" target="_blank"></a>
+	</footer>
+</html>
