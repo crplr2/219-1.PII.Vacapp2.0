@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    height: 100%;
 }
 
 
@@ -39,41 +40,9 @@ li a:hover {
 }
 
 #main{
+    height: 100%;
     width: 80%;
     margin: 50px auto 40px auto;
-}
-
-#hotel-title{
-    font-weight:700;
-    margin: 0px;
-    font-size: 25px;
-}
-
-#hotel-location{
-    margin: 5px auto 10px auto;
-}
-
-#main-image{
-    margin-right: 40px;
-    width: 60%;
-    float: left;
-}
-
-.smaller-images{
-    margin: 15px 10px;
-    width: 11%;
-    height: auto;
-}
-
-
-#text-reservation{
-    margin: 0;
-    font-weight:800;
-    font-size: 20px;
-}
-
-form div{
-    margin: 8px 0px;
 }
 
 #description{
@@ -82,9 +51,44 @@ form div{
     margin: 0px auto 120px auto;
 }
 
+
+
+#indexTexto{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-weight:700;
+    font-size: 60px;
+}
+
+
+#indexImagen{
+    display: block;
+    padding: 30px 0px;
+    margin: auto;
+    width: 60%;
+}
+
+
+#acercaTexto{
+    text-align: center;
+    padding: 50px 0px;
+    margin: 0px;
+    font-weight:400;
+    font-size: 20px;
+}
+
+
+#acercaImagen{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+
 #footer-hotel{
     display: block;
-    padding-top: 20px;
     color: white;
     height: 70px;
     background-color: #858587;
