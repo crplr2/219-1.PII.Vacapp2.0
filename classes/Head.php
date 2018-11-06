@@ -1,1 +1,1 @@
-<li id="logo"><img src="images/one_vacPackage/baseline-flight_takeoff-24px.svg" alt="logo-company"> VACAPP 2.0</li>
+<p id="header"><img src="images/one_vacPackage/baseline-flight_takeoff-24px.svg" alt="logo-company"> VACAPP 2.0</p>

@@ -16,21 +16,18 @@
 </head>
 
 <body>
-    
+    <?php  include 'classes/Head.php'; ?> 
     <nav>
         <ul>
-            <?php  include 'classes/Head.php'; ?>
             <li><a href="index.php" id="clicked" >Home</a></li>
             <li><a href="about.php" >About us</a></li>
             <li><a href="services.php">Services</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
-</nav>
+    </nav>
 
     <section id="main">
-            <p id="indexTexto">
-                <?php echo($home->getHomeTitle()); ?>
-            </p>
+            <p id="indexTexto"> <?php echo($home->getHomeTitle()); ?> </p>
             <img id="indexImagen" src="<?php echo($home->getHomeImage());?>" alt="logo">
 
     </section>

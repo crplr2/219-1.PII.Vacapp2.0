@@ -6,44 +6,60 @@ body{
 
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
     background-color: #858587;
 }
 
-li {
-    float: left;
-}
+
 
 li a {
-    display: block;
+
+    display: inline-block;
     color: white;
-    text-align: center;
     padding: 15px 16px;
     text-decoration: none;
 }
 
+li{
+
+    display: inline-block;
+}
+
+
+
 li a:hover {
     background-color: #000000;
+}
+
+#header{
+    padding: 12px;
+    background-color: #a5a5a5;
+    margin:  0px;
+    text-align: center;
+    font-weight:700;
+    font-size: 30px;
 }
 
 #clicked {
     background-color: #000000;
 }
 
-#logo{
-    padding: 10px 15px 10px 15px;
-    font-weight:700;
-    font-size: 24px;
+#admin{
+    height: 100%;
+    margin: 50px auto 40px auto;
+    text-align: center;
 }
+
 
 #main{
     height: 100%;
     width: 80%;
     margin: 50px auto 40px auto;
 }
+
+
 
 #description{
     width: 80%;
@@ -53,18 +69,18 @@ li a:hover {
 
 
 
-#indexTexto{
+#indexTexto {
+    font-size: 45px;
     text-align: center;
     padding: 0px;
     margin: 0px;
     font-weight:700;
-    font-size: 60px;
 }
 
 
 #indexImagen{
     display: block;
-    padding: 30px 0px;
+    padding: 20px 0px;
     margin: auto;
     width: 60%;
 }

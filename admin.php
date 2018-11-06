@@ -32,22 +32,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="css/one_vacPackage.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 </head>
 
 <body>
     
+    <?php  include 'classes/Head.php'; ?> 
     <nav>
         <ul>
-            <?php  include 'classes/head.php'; ?>
             <li><a href="admin.php" id="clicked" >Login Admin</a></li>
         </ul>
 </nav>
 
-    <section id="main">
-        <p> Login </p>
+    <section id="admin">
          <form action="" method="POST">
             <p> User</p>
             <input type="text" name="username" placeholder ="user" required>
@@ -55,8 +54,7 @@
             <input type="password" name="password" placeholder ="password" required> <br><br>
             <input type="submit">
         </form>
-        <br>
-        <?php if($error){echo("USERNAME OR PASSWORD ARE INVALID");} ?>
+        <br><?php if($error){echo("USERNAME OR PASSWORD ARE INVALID");} ?><br>
     </section>
     <?php  include 'classes/footer.php'; ?>
 </body>

@@ -28,6 +28,13 @@ CREATE TABLE services (
 	PRIMARY KEY (id)
 );
 
+CREATE TABLE footer (
+	id BIGINT NOT NULL,
+	texto_footer text NOT NULL,
+	PRIMARY KEY (id)
+);
+
+
 
 insert into home values(1,'VACAPP 2.0 ', 'https://cdn.familyfuncanada.com/wp-content/uploads/2016/05/Why-Family-Vacations-Matter.jpg');
 
@@ -39,6 +46,9 @@ Since 2009, our strong company culture and passion for our profession has result
 TravelStore is a Premium Member of ASTA (American Society of Travel Advisors), as well as an ASTA Green Member agency, and CLIA (Cruise Line International Association).
 Satisfied employees lead to satisfied customers. We know the growth and success of our company depends upon fulfilling our clients needs every day. That is also our promise ', 
 'https://fitsmallbusiness.com/wp-content/uploads/2013/09/about-us-1.jpg');
+
+
+insert into footer values (1, 'All rights reserved to vacapp2.0');
 
 
 insert into services values
