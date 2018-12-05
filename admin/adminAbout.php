@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin About</title>
     <link rel="stylesheet" href="../css/one_vacPackage.css">
+    <link rel="stylesheet" href="../css/services.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 </head>
 
@@ -51,7 +52,7 @@
             <textarea rows="4" cols="50" name="aboutText" placeholder ="about us description" required></textarea><br><br>
             <input type="submit"> <br><br>
         </form>
-        <button> <a href="logout.php"> Logout</a></button>
+        <button> <a id="botonLogout" href="logout.php"> Logout</a></button>
         <br><br><?php echo($message); ?><br>
     </section>
 

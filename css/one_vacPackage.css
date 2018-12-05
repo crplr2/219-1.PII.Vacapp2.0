@@ -5,6 +5,7 @@ body{
 }
 
 
+
 ul {
     text-align: center;
     margin: 0px;
@@ -15,7 +16,6 @@ ul {
 
 
 li a {
-
     display: inline-block;
     color: white;
     padding: 15px 16px;
@@ -23,7 +23,6 @@ li a {
 }
 
 li{
-
     display: inline-block;
 }
 
@@ -110,3 +109,5 @@ li a:hover {
     background-color: #858587;
     text-align: center;
 }
+
+

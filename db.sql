@@ -34,11 +34,33 @@ CREATE TABLE footer (
 	PRIMARY KEY (id)
 );
 
+CREATE TABLE header (
+	id BIGINT NOT NULL,
+	texto_header text NOT NULL,
+	imagen_header text NOT NULL,
+	PRIMARY KEY (id)
+);
 
+
+CREATE TABLE contact (
+	id BIGINT AUTO_INCREMENT,
+	nombre text NOT NULL,
+	email text NOT NULL,
+	mensaje text NOT NULL,
+	fecha TIMESTAMP   DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
+);
+
+
+
+INSERT INTO contact(nombre,email,mensaje) VALUES("testNombre",  "test@test.com", "test");
 
 insert into home values(1,'VACAPP 2.0 ', 'https://cdn.familyfuncanada.com/wp-content/uploads/2016/05/Why-Family-Vacations-Matter.jpg');
 
 insert into accounts values(1, 'admin','test');
+insert into footer values (1, 'All rights reserved to vacapp2.0');
+
+insert into header values (1, 'VACAPP 2.0','http://icons-for-free.com/free-icons/png/512/134134.png');
 
 insert into about values(1,
 'We are an employee-owned travel agency anchored by our values, integrity and dedication to customer service. Our award-winning company consistently ranks as one of the best agencies in the country (Travel Weekly, Business Travel Weekly), and is a top member of the prestigious Signature Travel Network, a worldwide partnership allowing us to provide our customers unmatched benefits.  
@@ -48,7 +70,6 @@ Satisfied employees lead to satisfied customers. We know the growth and success 
 'https://fitsmallbusiness.com/wp-content/uploads/2013/09/about-us-1.jpg');
 
 
-insert into footer values (1, 'All rights reserved to vacapp2.0');
 
 
 insert into services values
@@ -61,6 +82,6 @@ Once the trip is underway, your accommodation and transport are all included (ph
 (3,'https://www.intrepidtravel.com/sites/intrepid/files/styles/320w/public/book-flights_0.jpg',
 'Flights
 Finding the right flight online can be pretty frustrating – all those airport codes, stopovers, layovers, hot meals and aisle seats. Let our flight specialists help with the hard stuff. '),
-(4,'https://www.intrepidtravel.com/sites/intrepid/files/styles/320w/public/urban-adventure_0.jpg',
+(4,'https://img.grouponcdn.com/deal/BserFfDi5Nu2gURVGKWMRp7UgrE/Bs-2100x1400/v1/c700x420.jpg',
 'Sightseeing
 So you have touched down, made it to the hotel and slipped on some comfy walking shoes. What next? Kickstart your adventure by joining one of our Urban Adventures. They’re day tours with a difference.');

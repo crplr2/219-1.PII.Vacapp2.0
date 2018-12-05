@@ -24,10 +24,9 @@
 ?>
 <footer id = "footer-hotel">
         <br>
-        <p>
         <?php 
             $footer = new Footer(); 
             echo($footer->getFooterText());
         
-        ?></p>
+        ?>
 </footer>

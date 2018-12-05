@@ -1,7 +1,22 @@
 <?php
     include 'classes/Db.php';
-    include 'classes/Services.php';
-    $services = new Services();
+    $message = '';
+    $object = new Db();
+    $db = $object->connect();
+
+   if($_SERVER["REQUEST_METHOD"] == "POST") { 
+      $name = mysqli_real_escape_string($db,$_POST['name']);
+      $email = mysqli_real_escape_string($db,$_POST['email']); 
+      $message = mysqli_real_escape_string($db,$_POST['message']); 
+      $sql = "INSERT INTO contact(nombre,email,mensaje) VALUES('$name', '$email', '$message')";
+    
+    if ($db->query($sql) === TRUE) {
+        $message = "MESSAGE WAS SENT SUCCESSFULLY";
+    } else {
+        $message = "Error updating : " . $db->error;
+    }
+    $db->close();  
+   }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +33,7 @@
     <?php  include 'classes/Head.php'; ?> 
     <nav>
         <ul>
-            <li><a href="index.php" >Home</a></li>
+            <li id="home" ><a href="index.php" >Home</a></li>
             <li><a href="about.php" >About us</a></li>
             <li><a href="services.php" >Services</a></li>
             <li><a href="contact.php" id="clicked" >Contact</a></li>
@@ -26,15 +41,24 @@
         </ul>
     </nav>
 
-    <section id="main">
-            <p id="indexTexto">
-                <?php  ?>
-            </p>
-            <img id="indexImagen" src=<?php ?> alt="logo">
+   <section id="admin">
 
+         <form action="" method="POST">
+            <p><?php echo($message); ?></p><br>
+            <p> Contact us send  a  message </p>
+            <p> Name</p>
+            <input id="primerTexto" type="text" name="name" placeholder ="name" required> <br>
+            <p> Email </p>
+            <input id="segundoTexto" type="text" name="email" placeholder ="email" required> <br>
+            <p> Message </p>
+            <textarea   name="message"  cols="80" rows="13" required></textarea><br><br>
+            <input  id="botonSubmit" type="submit"> <br><br>
+        </form>
     </section>
+
 
     
     <?php  include 'classes/Footer.php'; ?>
+    <script src="javascript/scripts.js"></script>
 </body>
 </html>

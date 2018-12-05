@@ -38,13 +38,12 @@
 </head>
 
 <body>
-    
     <?php  include 'classes/Head.php'; ?> 
     <nav>
         <ul>
             <li><a href="admin.php" id="clicked" >Login Admin</a></li>
-        </ul>
-</nav>
+        </ul>   
+    </nav>
 
     <section id="admin">
          <form action="" method="POST">
