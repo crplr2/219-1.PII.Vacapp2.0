@@ -17,7 +17,7 @@
 
 <body>
 <?php  include 'classes/Head.php'; ?> 
-    <nav>
+    <nav id="nav">
         <ul>
             <li><a href="index.php" >Home</a></li>
             <li><a href="about.php" id="clicked" >About us</a></li>
@@ -36,5 +36,6 @@
 
     
     <?php  include 'classes/Footer.php'; ?>
+    <script src="javascript/scriptsJaime.js"></script>
 </body>
 </html>
